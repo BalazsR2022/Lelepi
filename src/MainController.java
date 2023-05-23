@@ -1,11 +1,6 @@
 
 public class MainController {
 
-    package controllers;
-
-import views.MainFrame;
-
-public class MainController {
     MainFrame mainFrame;
 
     public MainController() {
@@ -26,12 +21,13 @@ public class MainController {
         double hosszAPanel = Double.parseDouble(
                 this.mainFrame.gethosszAPanel().getValue());
         double hosszBPanel = Double.parseDouble(
-                this.mainFrame.getHosszBPanel().getValue());
+                this.mainFrame.gethosszBPanel().getValue());
         double hosszCPanel = Double.parseDouble(
-                this.mainFrame.getHosszCPanel().getValue());
+                this.mainFrame.gethosszCPanel().getValue());
 
-        Double weight = calcTerfogat(hosszAPanel, hosszBPanel, hosszCPanel);
-        this.mainFrame.getTerfogatPanel().setValue(terfogat.toString());
+        Double terfogat = calcTerfogat(hosszAPanel, hosszBPanel, hosszCPanel);
+        this.mainFrame.terfogatPanel.setValue(terfogat.toString());
+        this.calcTerfogat(hosszAPanel, hosszBPanel, hosszCPanel);
     }
 
     private double calcTerfogat(double hosszAPanel, double hosszBPanel, double hosszCPanel) {
@@ -39,4 +35,5 @@ public class MainController {
 
         return terfogat;
     }
+
 }

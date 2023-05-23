@@ -20,6 +20,7 @@ public class MainFrame extends JFrame {
         this.initComponent();
         this.addComponent();
         this.setFrame();
+
     }
 
     private void initComponent() {
