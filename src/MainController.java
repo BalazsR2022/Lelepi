@@ -1,4 +1,7 @@
-
+/*Balázs Réka
+ * 2023-05-23
+ * SzoftI-2-E
+ */
 public class MainController {
 
     MainFrame mainFrame;
