@@ -7,6 +7,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 
 public class MainFrame extends JFrame {
     InputPanel hosszAPanel;
@@ -15,6 +16,7 @@ public class MainFrame extends JFrame {
     JButton calcButton;
     InputPanel terfogatPanel;
     JPanel buttonPanel;
+    JLabel label;
 
     public MainFrame() {
         this.initComponent();
@@ -24,6 +26,7 @@ public class MainFrame extends JFrame {
     }
 
     private void initComponent() {
+        this.label = new JLabel("Balázs Réka, 2023.05.23, Szoft I-2-E");
         this.hosszAPanel = new InputPanel("a");
         this.hosszBPanel = new InputPanel("b");
         this.hosszCPanel = new InputPanel("c");
@@ -39,6 +42,7 @@ public class MainFrame extends JFrame {
         this.add(this.buttonPanel);
         this.add(this.calcButton);
         this.add(this.terfogatPanel);
+        this.add(this.label);
 
     }
 
