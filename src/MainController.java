@@ -1,4 +1,6 @@
+
 public class MainController {
+
     package controllers;
 
 import views.MainFrame;
@@ -21,17 +23,20 @@ public class MainController {
 
     private void startCalc() {
         System.out.println("Mukodik");
-        double perimeter = Double.parseDouble(
-                this.mainFrame.getPerimeterPanel().getValue());
-        double length = Double.parseDouble(
-                this.mainFrame.getLongPanel().getValue());
-        Double weight = calcWeight(perimeter, length);
-        this.mainFrame.getWeightPanel().setValue(weight.toString());
+        double hosszAPanel = Double.parseDouble(
+                this.mainFrame.gethosszAPanel().getValue());
+        double hosszBPanel = Double.parseDouble(
+                this.mainFrame.getHosszBPanel().getValue());
+        double hosszCPanel = Double.parseDouble(
+                this.mainFrame.getHosszCPanel().getValue());
+
+        Double weight = calcTerfogat(hosszAPanel, hosszBPanel, hosszCPanel);
+        this.mainFrame.getTerfogatPanel().setValue(terfogat.toString());
     }
 
-    private double calcterfogat(double hosszAPanel, double hosszBPanel, double hosszCPanel ) {
-        double terfogat = (hosszAPanel * hosszBPanel * hosszCPanel) ;
+    private double calcTerfogat(double hosszAPanel, double hosszBPanel, double hosszCPanel) {
+        double terfogat = (hosszAPanel * hosszBPanel * hosszCPanel);
 
         return terfogat;
     }
-}}
+}
