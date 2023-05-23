@@ -1,3 +1,7 @@
+/*Balázs Réka
+ * 2023-05-23
+ * SzoftI-2-E
+ */
 
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
@@ -41,7 +45,6 @@ public class InputPanel extends JPanel {
         this.setBorder(new EmptyBorder(5, 10, 5, 10));
     }
 
-    // beállítók
     public void setLabel(String text) {
         this.label.setText(text);
     }
