@@ -47,4 +47,21 @@ public class MainFrame extends JFrame {
         this.setSize(400, 300);
         this.setVisible(true);
     }
+
+    public InputPanel gethosszAPanel() {
+        return hosszAPanel;
+    }
+
+    public InputPanel gethosszBPanel() {
+        return hosszBPanel;
+    }
+
+    public InputPanel gethosszCPanel() {
+        return hosszCPanel;
+    }
+
+    public JButton getCalcButton() {
+        return calcButton;
+    }
+
 }
