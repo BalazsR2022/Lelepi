@@ -28,9 +28,9 @@ public class MainController {
         double hosszCPanel = Double.parseDouble(
                 this.mainFrame.gethosszCPanel().getValue());
 
-        Double terfogat = calcTerfogat(hosszAPanel, hosszBPanel, hosszCPanel);
-        this.mainFrame.terfogatPanel.setValue(terfogat.toString());
-        this.calcTerfogat(hosszAPanel, hosszBPanel, hosszCPanel);
+        double terfogat = calcTerfogat(hosszAPanel, hosszBPanel, hosszCPanel);
+        this.mainFrame.getTerfogatLabel().setText("Térfogat: " + terfogat);
+        
     }
 
     private double calcTerfogat(double hosszAPanel, double hosszBPanel, double hosszCPanel) {

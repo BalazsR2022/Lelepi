@@ -59,7 +59,9 @@ public class InputPanel extends JPanel {
 
     private void addComponent() {
         this.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
-        this.add(this.label);
-        this.add(this.field);
+       this.add(this.label);
+       this.add(this.field);
+        
+        
     }
 }

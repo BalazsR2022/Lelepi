@@ -14,7 +14,7 @@ public class MainFrame extends JFrame {
     InputPanel hosszBPanel;
     InputPanel hosszCPanel;
     JButton calcButton;
-    InputPanel terfogatPanel;
+    JLabel terfogatLabel;
     JPanel buttonPanel;
     JLabel label;
 
@@ -32,17 +32,18 @@ public class MainFrame extends JFrame {
         this.hosszCPanel = new InputPanel("c");
         this.buttonPanel = new JPanel();
         this.calcButton = new JButton("Számít");
-        this.terfogatPanel = new InputPanel("Térfogat");
+        this.terfogatLabel = new JLabel("Térfogat");
     }
 
     private void addComponent() {
+        this.add(this.label);
         this.add(this.hosszAPanel);
         this.add(this.hosszBPanel);
         this.add(this.hosszCPanel);
         this.add(this.buttonPanel);
         this.add(this.calcButton);
-        this.add(this.terfogatPanel);
-        this.add(this.label);
+        this.add(this.terfogatLabel);
+        
 
     }
 
@@ -67,6 +68,9 @@ public class MainFrame extends JFrame {
 
     public JButton getCalcButton() {
         return calcButton;
+    }
+    public JLabel getTerfogatLabel(){
+        return terfogatLabel;
     }
 
 }
